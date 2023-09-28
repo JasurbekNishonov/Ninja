@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+      <div id="registration" class="registration">
+        <button id="delete">❌</button>
+        <form class="rating">
+          <div class="rating__stars">
+            <input id="rating-1" class="rating__input rating__input-1" type="radio" name="rating" value="1">
+            <input id="rating-2" class="rating__input rating__input-2" type="radio" name="rating" value="2">
+            <input id="rating-3" class="rating__input rating__input-3" type="radio" name="rating" value="3">
+            <input id="rating-4" class="rating__input rating__input-4" type="radio" name="rating" value="4">
+            <input id="rating-5" class="rating__input rating__input-5" type="radio" name="rating" value="5">
+            <label class="rating__label" for="rating-1">
+              <svg class="rating__star" width="32" height="32" viewbox="0 0 32 32" aria-hidden="true">
+                <g transform="translate(16,16)">
+                  <circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8" transform="scale(0)" />
+                </g>
+                <g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <g transform="translate(16,16) rotate(180)">
+                    <polygon class="rating__star-stroke" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="none" />
+                    <polygon class="rating__star-fill" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="#000" />
+                  </g>
+                  <g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+                    <polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+                  </g>
+                </g>
+              </svg>
+              <span class="rating__sr">1 star—Terrible</span>
+            </label>
+            <label class="rating__label" for="rating-2">
+              <svg class="rating__star" width="32" height="32" viewbox="0 0 32 32" aria-hidden="true">
+                <g transform="translate(16,16)">
+                  <circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8" transform="scale(0)" />
+                </g>
+                <g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <g transform="translate(16,16) rotate(180)">
+                    <polygon class="rating__star-stroke" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="none" />
+                    <polygon class="rating__star-fill" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="#000" />
+                  </g>
+                  <g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+                    <polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+                  </g>
+                </g>
+              </svg>
+              <span class="rating__sr">2 stars—Bad</span>
+            </label>
+            <label class="rating__label" for="rating-3">
+              <svg class="rating__star" width="32" height="32" viewbox="0 0 32 32" aria-hidden="true">
+                <g transform="translate(16,16)">
+                  <circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8" transform="scale(0)" />
+                </g>
+                <g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <g transform="translate(16,16) rotate(180)">
+                    <polygon class="rating__star-stroke" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="none" />
+                    <polygon class="rating__star-fill" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="#000" />
+                  </g>
+                  <g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+                    <polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+                  </g>
+                </g>
+              </svg>
+              <span class="rating__sr">3 stars—OK</span>
+            </label>
+            <label class="rating__label" for="rating-4">
+              <svg class="rating__star" width="32" height="32" viewbox="0 0 32 32" aria-hidden="true">
+                <g transform="translate(16,16)">
+                  <circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8" transform="scale(0)" />
+                </g>
+                <g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <g transform="translate(16,16) rotate(180)">
+                    <polygon class="rating__star-stroke" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="none" />
+                    <polygon class="rating__star-fill" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="#000" />
+                  </g>
+                  <g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+                    <polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+                  </g>
+                </g>
+              </svg>
+              <span class="rating__sr">4 stars—Good</span>
+            </label>
+            <label class="rating__label" for="rating-5">
+              <svg class="rating__star" width="32" height="32" viewbox="0 0 32 32" aria-hidden="true">
+                <g transform="translate(16,16)">
+                  <circle class="rating__star-ring" fill="none" stroke="#000" stroke-width="16" r="8" transform="scale(0)" />
+                </g>
+                <g stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <g transform="translate(16,16) rotate(180)">
+                    <polygon class="rating__star-stroke" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="none" />
+                    <polygon class="rating__star-fill" points="0,15 4.41,6.07 14.27,4.64 7.13,-2.32 8.82,-12.14 0,-7.5 -8.82,-12.14 -7.13,-2.32 -14.27,4.64 -4.41,6.07" fill="#000" />
+                  </g>
+                  <g transform="translate(16,16)" stroke-dasharray="12 12" stroke-dashoffset="12">
+                    <polyline class="rating__star-line" transform="rotate(0)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(72)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(144)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(216)" points="0 4,0 16" />
+                    <polyline class="rating__star-line" transform="rotate(288)" points="0 4,0 16" />
+                  </g>
+                </g>
+              </svg>
+              <span class="rating__sr">5 stars—Excellent</span>
+            </label>
+            <p class="rating__display" data-rating="1" hidden>Terrible</p>
+            <p class="rating__display" data-rating="2" hidden>Bad</p>
+            <p class="rating__display" data-rating="3" hidden>OK</p>
+            <p class="rating__display" data-rating="4" hidden>Good</p>
+            <p class="rating__display" data-rating="5" hidden>Excellent</p>
+          </div>
+        </form>
+      </div>
+        <div class="box">
+            <h1 data-value="NINJA" data-aos="fade-down" id="h1">NINJA</h1>
+        <h2 data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi eos soluta, eum, illum dignissimos adipisci deserunt, ducimus nihil accusantium provident accusamus officiis voluptates. Illo, consectetur a ea incidunt fugiat voluptates hic iusto perspiciatis unde, soluta voluptatibus nam corporis minus?</h2>
+        </div>
+        <div class="ddd">
+            <button id="scroll-down"><i class="fa-solid fa-circle-down"></i></button>
+            
+        </div>
+    </header>
+    <main>
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-12">
+                    <img id="ninja1" data-aos="fade-left" src="./images/6c8ad63b85b30c8697472089a019196b.png" alt="">
+                    <img id="ninja2" data-aos="fade-right" src="./images/Boss_lynx_young.webp" alt="">
+                    <img id="ninja3" data-aos="fade-right" src="./images/415-4154495_ninja-man-knives-2-shadow-fight-2-ninja.png" alt="">
+                    <img id="ninja4" data-aos="fade-left" src="./images/shadow fight Ninja man butterfly swords.png" alt="">
+                    <img id="ninja5" data-aos="fade-left" src="./images/shadow fight Ninja man labrys.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="section">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+              </div>
+              <a id="submit-btn" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+            <button class="share-btn" id="shareBtn">
+                <i class="fa-solid fa-arrow-up-right-from-square share-icon"></i>
+                <span class="social-icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              </button> 
+          </div>
+          
+    </section>
+    <footer>
+        
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
